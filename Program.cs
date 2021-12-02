@@ -43,40 +43,40 @@ namespace Rock_paper_scissors {
 
                         }
 
-                        if (move == "rock" && botMove == "scissors") {
+                        else if (move == "rock" && botMove == "scissors") {
 
                             Console.WriteLine("You crushed the bot's scissors with your rock. You got a point!");
                             points ++;
 
-                        } if (move == "paper" && botMove == "scissors") {
+                        } else if (move == "paper" && botMove == "scissors") {
 
                             Console.WriteLine("You cut the bot's paper with your scissors. You got a point!");
                             botPoints ++;
 
                         }
 
-                        if (move == "paper" && botMove == "rock") {
+                        else if (move == "paper" && botMove == "rock") {
 
                             Console.WriteLine("You covered the bot's rock with your paper. You got a point!");
                             points ++;
 
-                        } if (move == "scissors" && botMove == "rock") {
+                        } else if (move == "scissors" && botMove == "rock") {
 
                             Console.WriteLine("The bot crushed your scissors with its rock. The bot got a point!");
                             botPoints ++;
                     
                         }
 
-                        if (move == "scissors" && botMove == "paper") {
+                        else if (move == "scissors" && botMove == "paper") {
 
                             Console.WriteLine("You cut the bot's paper with your scissors. You got a point!");
                             points ++;
 
                         }
 
-                        if (move == botMove) {
+                        else if (move == botMove) {
 
-                            Console.WriteLine("You both chose " + move + ". Noone got a point");
+                            Console.WriteLine($"You both chose {move}. Noone got a point");
 
                         }
 
@@ -95,7 +95,7 @@ namespace Rock_paper_scissors {
                     // Determining the winner.
                     if (botPoints > points) Console.WriteLine("\nThe bot won!\n\nYour points:\t\tBot points:\n\n" + points + "\t\t\t" + botPoints);
 
-                    else if (points > botPoints) Console.WriteLine("\nYou won!\n\nYour points:\t\tBot points:\n\n" + points + "\t\t\t" + botPoints);
+                    if (points > botPoints) Console.WriteLine("\nYou won!\n\nYour points:\t\tBot points:\n\n" + points + "\t\t\t" + botPoints);
 
                     else Console.WriteLine("\nIt is a draw!\n\nYour points:\t\tBot points:\n\n" + points + "\t\t\t" + botPoints);
 

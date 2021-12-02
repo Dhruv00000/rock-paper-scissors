@@ -20,32 +20,32 @@ try:
                 botPoints += 1
 
 
-            if move == "rock" and botMove == "scissors":
+            elif move == "rock" and botMove == "scissors":
 
                 print("You crushed the bot's scissors with your rock. You got a point!")
                 points += 1
 
-            if move == "paper" and botMove == "scissors":
+            elif move == "paper" and botMove == "scissors":
 
                 print("The bot's scissors cut your paper. The bot got a point!")
                 botPoints += 1
 
-            if move == "paper" and botMove == "rock":
+            elif move == "paper" and botMove == "rock":
 
                 print("Your paper covered the bot's rock. The bot got a point!")
                 points += 1
 
-            if move == "scissors" and botMove == "rock":
+            elif move == "scissors" and botMove == "rock":
 
                 print("The bot's rock crushed your scissors. The bot got a point!")
                 botPoints += 1
 
-            if move == "scissors" and botMove == "paper":
+            elif move == "scissors" and botMove == "paper":
 
                 print("Your scissors cut the bot's paper. You got a point!")
                 points += 1
 
-            if move == botMove:
+            elif move == botMove:
 
                 print(f"You both chose {move}. Noone got a point")
 
