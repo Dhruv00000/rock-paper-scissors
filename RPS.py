@@ -16,7 +16,7 @@ try:
 
             if move == "rock" and botMove == "paper":
 
-                print("The bot chose paper while you chose rock. The bot got a point!")
+                print("The bot's paper covered your rock. The bot got a point!")
                 botPoints += 1
 
             if move == "rock" and botMove == "rock":
@@ -25,12 +25,12 @@ try:
 
             if move == "rock" and botMove == "scissors":
 
-                print("The bot chose scissors while you chose rock. You got a point!")
+                print("You crushed the bot's scissors with your rock. You got a point!")
                 points += 1
 
             if move == "paper" and botMove == "scissors":
 
-                print("The bot chose scissors while you chose paper. You got a point!")
+                print("The bot's scissors cut your paper. You got a point!")
                 botPoints += 1
 
             if move == "paper" and botMove == "paper":
@@ -39,21 +39,21 @@ try:
 
             if move == "paper" and botMove == "rock":
 
-                print("The bot chose rock while you chose paper. The bot got a point!")
+                print("Your paper covered the bot's rock. The bot got a point!")
                 points += 1
 
             if move == "scissors" and botMove == "rock":
 
-                print("The bot chose rock while you chose scissors. The bot got a point!")
+                print("The bot's rock crushed your scissors. The bot got a point!")
                 botPoints += 1
 
             if move == "scissors" and botMove == "scissors":
 
-                print("Both of you chose scissors. Noone got a point!")
+                print("You both chose scissors. Noone got a point!")
 
             if move == "scissors" and botMove == "paper":
 
-                print("The bot chose paper while you chose scissors. You got a point!")
+                print("Your scissors cut the bot's paper. You got a point!")
                 points += 1
 
             Rounds -= 1

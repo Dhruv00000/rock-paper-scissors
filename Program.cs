@@ -38,38 +38,38 @@ namespace Rock_paper_scissors {
                         // Determining the result of the current round.
                         if (move == "rock" && botMove == "paper") {
 
-                            Console.WriteLine("The bot chose paper while you chose rock. The bot got a point!");
+                            Console.WriteLine("The bot's paper covered your rock. The bot got a point!");
                             botPoints ++;
 
                         } if (move == "rock" && botMove == "rock") Console.WriteLine("You both chose rock. Noone got a point!");
 
                         if (move == "rock" && botMove == "scissors") {
 
-                            Console.WriteLine("The bot chose scissors while you chose rock. You got a point!");
+                            Console.WriteLine("You crushed the bot's scissors with your rock. You got a point!");
                             points ++;
 
                         } if (move == "paper" && botMove == "scissors") {
 
-                            Console.WriteLine("The bot chose scissors while you chose paper. You got a point!");
+                            Console.WriteLine("You cut the bot's paper with your scissors. You got a point!");
                             botPoints ++;
 
                         } if (move == "paper" && botMove == "paper") Console.WriteLine("You both chose paper. Noone got a point!");
 
                         if (move == "paper" && botMove == "rock") {
 
-                            Console.WriteLine("The bot chose rock while you chose paper. The bot got a point!");
+                            Console.WriteLine("You covered the bot's rock with your paper. You got a point!");
                             points ++;
 
                         } if (move == "scissors" && botMove == "rock") {
 
-                            Console.WriteLine("The bot chose rock while you chose scissors. The bot got a point!");
+                            Console.WriteLine("The bot crushed your scissors with its rock. The bot got a point!");
                             botPoints ++;
                     
                         } if (move == "scissors" && botMove == "scissors") Console.WriteLine("You both chose scissors. Noone got a point!");
 
                         if (move == "scissors" && botMove == "paper") {
 
-                            Console.WriteLine("The bot chose paper while you chose scissors. You got a point!");
+                            Console.WriteLine("You cut the bot's paper with your scissors. You got a point!");
                             points ++;
 
                         }
