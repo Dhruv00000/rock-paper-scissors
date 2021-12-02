@@ -41,7 +41,7 @@ namespace Rock_paper_scissors {
                             Console.WriteLine("The bot's paper covered your rock. The bot got a point!");
                             botPoints ++;
 
-                        } if (move == "rock" && botMove == "rock") Console.WriteLine("You both chose rock. Noone got a point!");
+                        }
 
                         if (move == "rock" && botMove == "scissors") {
 
@@ -53,7 +53,7 @@ namespace Rock_paper_scissors {
                             Console.WriteLine("You cut the bot's paper with your scissors. You got a point!");
                             botPoints ++;
 
-                        } if (move == "paper" && botMove == "paper") Console.WriteLine("You both chose paper. Noone got a point!");
+                        }
 
                         if (move == "paper" && botMove == "rock") {
 
@@ -65,12 +65,18 @@ namespace Rock_paper_scissors {
                             Console.WriteLine("The bot crushed your scissors with its rock. The bot got a point!");
                             botPoints ++;
                     
-                        } if (move == "scissors" && botMove == "scissors") Console.WriteLine("You both chose scissors. Noone got a point!");
+                        }
 
                         if (move == "scissors" && botMove == "paper") {
 
                             Console.WriteLine("You cut the bot's paper with your scissors. You got a point!");
                             points ++;
+
+                        }
+
+                        if (move == botMove) {
+
+                            Console.WriteLine("You both chose " + move + ". Noone got a point");
 
                         }
 
